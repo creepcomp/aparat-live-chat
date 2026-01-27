@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url('./fonts/Vazir-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('./fonts/Vazir-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+div::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: #d2d3d350;
+  border-radius: 100px;
+}
+
+div::-webkit-scrollbar-thumb:active {
+  background: transparent;
+}
+
+* {
+  font-family: 'Vazir', sans-serif !important;
+}
