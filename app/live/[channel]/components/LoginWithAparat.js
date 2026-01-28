@@ -6,7 +6,7 @@ import { loginAparatWithPassword } from '../actions';
 import { useAlert } from '@/app/contexts/AlertContext';
 import { useRouter } from 'next/navigation';
 
-export default function AparatLogin() {
+export default function LoginWithAparat() {
   const { showAlert } = useAlert();
   const router = useRouter();
 

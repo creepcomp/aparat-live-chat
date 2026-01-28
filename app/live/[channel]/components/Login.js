@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { Box, Container, Paper, Button, Typography, Stack } from '@mui/material';
-import AparatLogin from './AparatLogin';
-import GuestNickname from './GuestNickname';
+import LoginWithAparat from './LoginWithAparat';
+import LoginAsGuest from './LoginAsGuest';
 
 export default function Login() {
   const [view, setView] = useState(null);
@@ -21,14 +21,14 @@ export default function Login() {
 
         {view === 'aparat' && (
           <Box>
-            <AparatLogin />
+            <LoginWithAparat />
             <Button variant="outlined" fullWidth sx={{ mt: 1 }} onClick={() => setView(null)}>بازگشت</Button>
           </Box>
         )}
 
         {view === 'guest' && (
           <Box>
-            <GuestNickname />
+            <LoginAsGuest />
             <Button variant="outlined" fullWidth sx={{ mt: 1 }} onClick={() => setView(null)}>Back</Button>
           </Box>
         )}

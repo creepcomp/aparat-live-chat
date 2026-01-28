@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Button, TextField, Typography, Stack } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
-export default function GuestNickname() {
+export default function LoginAsGuest() {
   const [nickname, setNickname] = useState('');
   const [error, setError] = useState('');
   const router = useRouter();
